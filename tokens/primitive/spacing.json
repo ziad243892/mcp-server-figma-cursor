@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$description": "Primitive spacing tokens - raw spacing values in pixels",
+  "spacing": {
+    "0": { "value": "0", "type": "dimension", "unit": "px" },
+    "1": { "value": "4", "type": "dimension", "unit": "px" },
+    "2": { "value": "8", "type": "dimension", "unit": "px" },
+    "3": { "value": "12", "type": "dimension", "unit": "px" },
+    "4": { "value": "16", "type": "dimension", "unit": "px" },
+    "5": { "value": "20", "type": "dimension", "unit": "px" },
+    "6": { "value": "24", "type": "dimension", "unit": "px" },
+    "8": { "value": "32", "type": "dimension", "unit": "px" },
+    "10": { "value": "40", "type": "dimension", "unit": "px" },
+    "12": { "value": "48", "type": "dimension", "unit": "px" },
+    "16": { "value": "64", "type": "dimension", "unit": "px" },
+    "20": { "value": "80", "type": "dimension", "unit": "px" },
+    "24": { "value": "96", "type": "dimension", "unit": "px" },
+    "32": { "value": "128", "type": "dimension", "unit": "px" },
+    "40": { "value": "160", "type": "dimension", "unit": "px" },
+    "48": { "value": "192", "type": "dimension", "unit": "px" },
+    "64": { "value": "256", "type": "dimension", "unit": "px" }
+  }
+}
+

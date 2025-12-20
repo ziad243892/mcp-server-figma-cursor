@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$description": "Component-specific tokens for Upload/DropZone component - matches Figma design",
+  "upload": {
+    "container": {
+      "padding": { "$value": "24px", "$type": "dimension" },
+      "gap": { "$value": "24px", "$type": "dimension" },
+      "borderRadius": { "$value": "4px", "$type": "dimension" },
+      "borderWidth": { "$value": "1px", "$type": "dimension" },
+      "borderStyle": { "$value": "dashed", "$type": "string" },
+      "background": {
+        "default": { "$value": "{alias.colors.background.secondary}", "$type": "color" },
+        "disabled": { "$value": "{alias.colors.background.secondary}", "$type": "color" }
+      },
+      "border": {
+        "default": { "$value": "{alias.colors.border.default}", "$type": "color" },
+        "disabled": { "$value": "#9da4ae", "$type": "color" }
+      }
+    },
+    "icon": {
+      "size": { "$value": "24px", "$type": "dimension" },
+      "color": {
+        "default": { "$value": "{alias.colors.text.primary}", "$type": "color" },
+        "disabled": { "$value": "#9da4ae", "$type": "color" }
+      }
+    },
+    "text": {
+      "main": {
+        "fontSize": { "$value": "{primitive.fontSize.base}", "$type": "dimension" },
+        "fontWeight": { "$value": "{primitive.fontWeight.bold}", "$type": "fontWeight" },
+        "lineHeight": { "$value": "{primitive.lineHeight.md}", "$type": "dimension" },
+        "color": {
+          "default": { "$value": "#1f2a37", "$type": "color" },
+          "disabled": { "$value": "#9da4ae", "$type": "color" }
+        }
+      },
+      "helper": {
+        "fontSize": { "$value": "{primitive.fontSize.sm}", "$type": "dimension" },
+        "fontWeight": { "$value": "{primitive.fontWeight.normal}", "$type": "fontWeight" },
+        "lineHeight": { "$value": "{primitive.lineHeight.sm}", "$type": "dimension" },
+        "color": {
+          "default": { "$value": "{alias.colors.text.secondary}", "$type": "color" },
+          "disabled": { "$value": "#9da4ae", "$type": "color" }
+        },
+        "gap": { "$value": "8px", "$type": "dimension" }
+      }
+    },
+    "button": {
+      "height": { "$value": "32px", "$type": "dimension" },
+      "paddingX": { "$value": "12px", "$type": "dimension" },
+      "paddingY": { "$value": "0px", "$type": "dimension" },
+      "gap": { "$value": "4px", "$type": "dimension" },
+      "borderRadius": { "$value": "4px", "$type": "dimension" },
+      "fontSize": { "$value": "{primitive.fontSize.sm}", "$type": "dimension" },
+      "lineHeight": { "$value": "{primitive.lineHeight.sm}", "$type": "dimension" },
+      "background": {
+        "default": { "$value": "rgba(255,255,255,0)", "$type": "color" },
+        "disabled": { "$value": "#e5e7eb", "$type": "color" }
+      },
+      "text": {
+        "default": { "$value": "#0a152f", "$type": "color" },
+        "disabled": { "$value": "#9da4ae", "$type": "color" }
+      }
+    }
+  }
+}
+

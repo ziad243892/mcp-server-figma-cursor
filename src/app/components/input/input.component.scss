@@ -1,0 +1,70 @@
+// Input component styles using design tokens
+.alk-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--token-alias-spacing-sm);
+}
+
+.alk-input-label {
+  font-size: var(--token-primitive-font-size-sm);
+  font-weight: var(--token-primitive-font-weight-medium);
+  color: var(--token-alias-colors-text-primary);
+}
+
+.alk-input {
+  // Base input styles from Component-Specific tokens
+  width: 100%;
+  background-color: var(--token-component-input-background-default);
+  border: var(--token-component-input-border-width) solid var(--token-component-input-border-default);
+  border-radius: var(--token-component-input-border-radius);
+  padding: 
+    var(--token-component-input-padding-y) 
+    var(--token-component-input-padding-x);
+  font-family: var(--token-primitive-font-family-sans);
+  font-size: var(--token-component-input-text-font-size);
+  color: var(--token-component-input-text-color);
+  transition: all 0.2s ease;
+  
+  // Placeholder styles
+  &::placeholder {
+    color: var(--token-component-input-text-placeholder);
+  }
+  
+  // Hover state
+  &:hover:not(:disabled) {
+    border-color: var(--token-component-input-border-hover);
+  }
+  
+  // Focus state
+  &:focus {
+    outline: none;
+    border-color: var(--token-component-input-border-focus);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  }
+  
+  // Error state (can be extended)
+  &.alk-input--error {
+    border-color: var(--token-component-input-border-error);
+  }
+  
+  // Disabled state
+  &:disabled {
+    background-color: var(--token-component-input-background-disabled);
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  // Size variants
+  &--sm {
+    height: var(--token-component-input-height-sm);
+  }
+  
+  &--md {
+    height: var(--token-component-input-height-md);
+  }
+  
+  &--lg {
+    height: var(--token-component-input-height-lg);
+  }
+}
+

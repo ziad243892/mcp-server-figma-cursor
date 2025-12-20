@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$description": "Main design tokens index - aggregates all collections",
+  "$imports": {
+    "primitive": "./primitive/index.json",
+    "alias": "./alias/index.json",
+    "component": "./component-specific/index.json",
+    "universal": "./universal/index.json"
+  },
+  "meta": {
+    "version": "1.0.0",
+    "designSystem": "Alkhwarizmi",
+    "lastUpdated": "2024-12-20"
+  }
+}
+

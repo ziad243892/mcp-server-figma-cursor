@@ -1,0 +1,81 @@
+<div class="accordion-showcase">
+  <header class="accordion-showcase__header">
+    <h1>Accordion Component Showcase</h1>
+    <p>Testing all accordion variants from Figma design system</p>
+    <div class="accordion-showcase__controls">
+      <label>
+        <input type="checkbox" [checked]="rtl" (change)="toggleRtl()">
+        RTL Mode (Arabic)
+      </label>
+    </div>
+  </header>
+
+  <div class="accordion-showcase__grid">
+    <!-- Collapsed Accordions -->
+    <section class="accordion-showcase__section">
+      <h2>Collapsed State</h2>
+      
+      <div class="accordion-showcase__row" *ngFor="let size of sizes">
+        <h3>{{ size }} Size</h3>
+        <div class="accordion-showcase__accordions">
+          <!-- Trailing Icon -->
+          <alk-accordion
+            [titleEn]="'Accordion Title'"
+            [titleAr]="'عنوان الأكورديون'"
+            [size]="size"
+            [iconAlignment]="'Trailing'"
+            [rtl]="rtl"
+            [expanded]="isExpanded(getAccordionKey(size, 'trailing', 0))"
+            (expandedChange)="expandedStates[getAccordionKey(size, 'trailing', 0)] = $event">
+            <p>The accordion component delivers large amounts of content in a small space through progressive disclosure. The user gets key details about the underlying content and can choose to expand that content within the constraints of the accordion.</p>
+          </alk-accordion>
+          
+          <!-- Leading Icon -->
+          <alk-accordion
+            [titleEn]="'Accordion Title'"
+            [titleAr]="'عنوان الأكورديون'"
+            [size]="size"
+            [iconAlignment]="'Leading'"
+            [rtl]="rtl"
+            [expanded]="isExpanded(getAccordionKey(size, 'leading', 0))"
+            (expandedChange)="expandedStates[getAccordionKey(size, 'leading', 0)] = $event">
+            <p>The accordion component delivers large amounts of content in a small space through progressive disclosure. The user gets key details about the underlying content and can choose to expand that content within the constraints of the accordion.</p>
+          </alk-accordion>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expanded Accordions -->
+    <section class="accordion-showcase__section">
+      <h2>Expanded State</h2>
+      
+      <div class="accordion-showcase__row" *ngFor="let size of sizes">
+        <h3>{{ size }} Size</h3>
+        <div class="accordion-showcase__accordions">
+          <!-- Trailing Icon - Expanded -->
+          <alk-accordion
+            [titleEn]="'Accordion Title'"
+            [titleAr]="'عنوان الأكورديون'"
+            [size]="size"
+            [iconAlignment]="'Trailing'"
+            [rtl]="rtl"
+            [expanded]="true">
+            <p>The accordion component delivers large amounts of content in a small space through progressive disclosure. The user gets key details about the underlying content and can choose to expand that content within the constraints of the accordion.</p>
+          </alk-accordion>
+          
+          <!-- Leading Icon - Expanded -->
+          <alk-accordion
+            [titleEn]="'Accordion Title'"
+            [titleAr]="'عنوان الأكورديون'"
+            [size]="size"
+            [iconAlignment]="'Leading'"
+            [rtl]="rtl"
+            [expanded]="true">
+            <p>The accordion component delivers large amounts of content in a small space through progressive disclosure. The user gets key details about the underlying content and can choose to expand that content within the constraints of the accordion.</p>
+          </alk-accordion>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+

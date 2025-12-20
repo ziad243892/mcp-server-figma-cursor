@@ -1,0 +1,46 @@
+<div 
+  class="alk-upload"
+  [class]="getContainerClasses()"
+  [attr.dir]="rtl ? 'rtl' : 'ltr'"
+  (click)="!disabled && triggerFileInput()">
+  
+  <!-- Hidden file input -->
+  <input
+    id="alk-upload-input"
+    type="file"
+    [accept]="accept"
+    [disabled]="disabled"
+    multiple
+    (change)="onFileSelected($event)"
+    style="display: none;">
+  
+  <!-- Upload Icon -->
+  <div class="alk-upload__icon">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20ZM8 15.01L9.41 16.42L11 14.84V19H13V14.84L14.59 16.43L16 15.01L12.01 11L8 15.01Z" fill="currentColor"/>
+    </svg>
+  </div>
+  
+  <!-- Text Content -->
+  <div class="alk-upload__text-wrapper">
+    <!-- Main instruction text -->
+    <p class="alk-upload__main-text">
+      {{ getMainText() }}
+    </p>
+    
+    <!-- Helper text (optional) -->
+    <p class="alk-upload__helper-text" *ngIf="showHelperText">
+      {{ getHelperText() }}
+    </p>
+  </div>
+  
+  <!-- Browse Files Button -->
+  <button
+    type="button"
+    class="alk-upload__browse-button"
+    [disabled]="disabled"
+    (click)="triggerFileInput(); $event.stopPropagation()">
+    {{ getBrowseButtonText() }}
+  </button>
+</div>
+

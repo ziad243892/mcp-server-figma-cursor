@@ -1,0 +1,11 @@
+<div class="alk-input-wrapper">
+  <label *ngIf="label" class="alk-input-label">{{ label }}</label>
+  <input
+    [class]="'alk-input alk-input--' + size"
+    [type]="type"
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+    [value]="value"
+    [attr.aria-label]="label || placeholder">
+</div>
+

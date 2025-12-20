@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$description": "Primitive collection - aggregates all primitive tokens",
+  "$imports": {
+    "colors": "./colors.json",
+    "spacing": "./spacing.json",
+    "typography": "./typography.json",
+    "borderRadius": "./border-radius.json",
+    "opacity": "./opacity.json"
+  }
+}
+

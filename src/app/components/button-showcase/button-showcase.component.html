@@ -1,0 +1,241 @@
+<div class="button-showcase">
+  <header class="button-showcase__header">
+    <h1>Button Component Showcase</h1>
+    <p>Testing all button variants from Figma design system</p>
+    <div class="button-showcase__controls">
+      <label>
+        <input type="checkbox" [checked]="rtl" (change)="toggleRtl()">
+        RTL Mode (Arabic)
+      </label>
+    </div>
+  </header>
+
+  <div class="button-showcase__grid">
+    <!-- Filled Buttons -->
+    <section class="button-showcase__section">
+      <h2>Filled Buttons</h2>
+      
+      <!-- Large Filled -->
+      <div class="button-showcase__row">
+        <h3>Large</h3>
+        <div class="button-showcase__buttons">
+          <alk-button
+            *ngFor="let color of colors"
+            [color]="color"
+            [size]="'Large'"
+            [variant]="'filled'"
+            [rtl]="rtl"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+        </div>
+      </div>
+      
+      <!-- Medium Filled -->
+      <div class="button-showcase__row">
+        <h3>Medium</h3>
+        <div class="button-showcase__buttons">
+          <alk-button
+            *ngFor="let color of colors"
+            [color]="color"
+            [size]="'Medium'"
+            [variant]="'filled'"
+            [rtl]="rtl"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+        </div>
+      </div>
+      
+      <!-- Small Filled -->
+      <div class="button-showcase__row">
+        <h3>Small</h3>
+        <div class="button-showcase__buttons">
+          <alk-button
+            *ngFor="let color of colors"
+            [color]="color"
+            [size]="'Small'"
+            [variant]="'filled'"
+            [rtl]="rtl"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outlined Buttons -->
+    <section class="button-showcase__section">
+      <h2>Outlined Buttons</h2>
+      
+      <!-- Large Outlined -->
+      <div class="button-showcase__row">
+        <h3>Large</h3>
+        <div class="button-showcase__buttons">
+          <alk-button
+            *ngFor="let color of colors"
+            [color]="color"
+            [size]="'Large'"
+            [variant]="'outlined'"
+            [rtl]="rtl"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+        </div>
+      </div>
+      
+      <!-- Medium Outlined -->
+      <div class="button-showcase__row">
+        <h3>Medium</h3>
+        <div class="button-showcase__buttons">
+          <alk-button
+            *ngFor="let color of colors"
+            [color]="color"
+            [size]="'Medium'"
+            [variant]="'outlined'"
+            [rtl]="rtl"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+        </div>
+      </div>
+      
+      <!-- Small Outlined -->
+      <div class="button-showcase__row">
+        <h3>Small</h3>
+        <div class="button-showcase__buttons">
+          <alk-button
+            *ngFor="let color of colors"
+            [color]="color"
+            [size]="'Small'"
+            [variant]="'outlined'"
+            [rtl]="rtl"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transparent Buttons -->
+    <section class="button-showcase__section">
+      <h2>Transparent Buttons (Text Only)</h2>
+      
+      <!-- Large Transparent -->
+      <div class="button-showcase__row">
+        <h3>Large</h3>
+        <div class="button-showcase__buttons">
+          <alk-button
+            *ngFor="let color of colors"
+            [color]="color"
+            [size]="'Large'"
+            [variant]="'transparent'"
+            [rtl]="rtl"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+        </div>
+      </div>
+      
+      <!-- Medium Transparent -->
+      <div class="button-showcase__row">
+        <h3>Medium</h3>
+        <div class="button-showcase__buttons">
+          <alk-button
+            *ngFor="let color of colors"
+            [color]="color"
+            [size]="'Medium'"
+            [variant]="'transparent'"
+            [rtl]="rtl"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+        </div>
+      </div>
+      
+      <!-- Small Transparent -->
+      <div class="button-showcase__row">
+        <h3>Small</h3>
+        <div class="button-showcase__buttons">
+          <alk-button
+            *ngFor="let color of colors"
+            [color]="color"
+            [size]="'Small'"
+            [variant]="'transparent'"
+            [rtl]="rtl"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Disabled Buttons -->
+    <section class="button-showcase__section">
+      <h2>Disabled Buttons</h2>
+      <div class="button-showcase__row">
+        <div class="button-showcase__buttons">
+          <alk-button
+            color="teal"
+            [size]="'Large'"
+            [variant]="'filled'"
+            [disabled]="true"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+          <alk-button
+            color="teal"
+            [size]="'Medium'"
+            [variant]="'filled'"
+            [disabled]="true"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+          <alk-button
+            color="teal"
+            [size]="'Small'"
+            [variant]="'filled'"
+            [disabled]="true"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buttons with Icons -->
+    <section class="button-showcase__section">
+      <h2>Buttons with Icons</h2>
+      <div class="button-showcase__row">
+        <div class="button-showcase__buttons">
+          <alk-button
+            color="teal"
+            [size]="'Large'"
+            [variant]="'filled'"
+            [showLeftIcon]="true"
+            [showRightIcon]="true"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+          <alk-button
+            color="navy"
+            [size]="'Medium'"
+            [variant]="'outlined'"
+            [showLeftIcon]="true"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+          <alk-button
+            color="steel-blue"
+            [size]="'Small'"
+            [variant]="'transparent'"
+            [showRightIcon]="true"
+            [textEn]="'Button'"
+            [textAr]="'إجراء'">
+          </alk-button>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+

@@ -1,0 +1,30 @@
+<div class="alk-accordion" [attr.dir]="rtl ? 'rtl' : 'ltr'">
+  <!-- Accordion Header -->
+  <button
+    [class]="getHeaderClasses()"
+    (click)="toggle()"
+    [attr.aria-expanded]="expanded"
+    [attr.aria-controls]="'accordion-body-' + titleEn">
+    <!-- Title -->
+    <span class="alk-accordion__title">
+      {{ getDisplayTitle() }}
+    </span>
+    
+    <!-- Icon -->
+    <span [class]="getIconClasses()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+  </button>
+  
+  <!-- Accordion Body (shown when expanded) -->
+  <div
+    *ngIf="expanded"
+    [class]="getBodyClasses()"
+    [id]="'accordion-body-' + titleEn"
+    [attr.aria-hidden]="!expanded">
+    <ng-content></ng-content>
+  </div>
+</div>
+

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$description": "Component-specific tokens for Accordion component - matches Figma design",
+  "accordion": {
+    "header": {
+      "accordion-lg-header-gap": { "$value": "16px", "$type": "dimension" },
+      "accordion-md-header-gap": { "$value": "16px", "$type": "dimension" },
+      "accordion-sm-header-gap": { "$value": "16px", "$type": "dimension" },
+      "accordion-lg-header-padding": { "$value": "16px", "$type": "dimension" },
+      "accordion-md-header-padding": { "$value": "12px", "$type": "dimension" },
+      "accordion-sm-header-padding": { "$value": "8px", "$type": "dimension" },
+      "accordion-lg-header-v-padding": { "$value": "16px", "$type": "dimension" },
+      "accordion-md-header-v-padding": { "$value": "12px", "$type": "dimension" },
+      "accordion-sm-header-v-padding": { "$value": "8px", "$type": "dimension" }
+    },
+    "body": {
+      "accordion-body-padding-top": { "$value": "8px", "$type": "dimension" },
+      "accordion-body-padding-bottom": { "$value": "24px", "$type": "dimension" },
+      "accordion-body-padding-left": { "$value": "48px", "$type": "dimension" },
+      "accordion-body-padding-right": { "$value": "16px", "$type": "dimension" }
+    },
+    "icon": {
+      "size": { "$value": "24px", "$type": "dimension" }
+    }
+  }
+}
+

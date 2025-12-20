@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$description": "Alias border radius tokens - semantic border radius references",
+  "borderRadius": {
+    "none": {
+      "$value": "{primitive.borderRadius.none}",
+      "$type": "dimension",
+      "description": "No border radius"
+    },
+    "sm": {
+      "$value": "{primitive.borderRadius.sm}",
+      "$type": "dimension",
+      "description": "Small border radius"
+    },
+    "base": {
+      "$value": "{primitive.borderRadius.base}",
+      "$type": "dimension",
+      "description": "Base border radius"
+    },
+    "md": {
+      "$value": "{primitive.borderRadius.md}",
+      "$type": "dimension",
+      "description": "Medium border radius"
+    },
+    "lg": {
+      "$value": "{primitive.borderRadius.lg}",
+      "$type": "dimension",
+      "description": "Large border radius"
+    },
+    "xl": {
+      "$value": "{primitive.borderRadius.xl}",
+      "$type": "dimension",
+      "description": "Extra large border radius"
+    },
+    "full": {
+      "$value": "{primitive.borderRadius.full}",
+      "$type": "dimension",
+      "description": "Full border radius (pill shape)"
+    }
+  }
+}
+

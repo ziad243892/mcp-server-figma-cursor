@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$description": "Alias collection - aggregates all semantic alias tokens",
+  "$imports": {
+    "colors": "./colors.json",
+    "spacing": "./spacing.json",
+    "typography": "./typography.json",
+    "borderRadius": "./border-radius.json"
+  }
+}
+

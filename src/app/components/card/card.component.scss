@@ -1,0 +1,30 @@
+// Card component styles using design tokens
+.alk-card {
+  // Card styles from Component-Specific tokens
+  background-color: var(--token-component-card-background);
+  border: var(--token-component-card-border-width) solid var(--token-component-card-border-color);
+  border-radius: var(--token-component-card-border-radius);
+  padding: var(--token-component-card-padding);
+  box-shadow: var(--token-component-card-shadow-md);
+  
+  // Card content spacing
+  > * {
+    margin-bottom: var(--token-alias-spacing-md);
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  // Typography within card
+  h4 {
+    margin-top: 0;
+    color: var(--token-alias-colors-text-primary);
+  }
+  
+  p {
+    color: var(--token-alias-colors-text-secondary);
+    margin-bottom: var(--token-alias-spacing-sm);
+  }
+}
+

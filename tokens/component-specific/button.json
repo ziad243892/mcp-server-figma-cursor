@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$description": "Component-specific tokens for Button component - matches Figma design",
+  "button": {
+    "button-background-teal": { "$value": "#12a89e", "$type": "color" },
+    "button-background-readbrown": { "$value": "#562c2d", "$type": "color" },
+    "button-background-navy": { "$value": "#0a152f", "$type": "color" },
+    "button-background-steelblue": { "$value": "#326f9e", "$type": "color" },
+    "button-background-mutedindigo": { "$value": "#545b91", "$type": "color" },
+    "button-background-transparent": { "$value": "rgba(255,255,255,0)", "$type": "color" },
+    "buttons-lg-padding": { "$value": "16", "$type": "dimension", "unit": "px" },
+    "buttons-md-padding": { "$value": "12", "$type": "dimension", "unit": "px" },
+    "buttons-sm-padding": { "$value": "8", "$type": "dimension", "unit": "px" },
+    "buttons-lg-gap": { "$value": "4", "$type": "dimension", "unit": "px" },
+    "buttons-md-gap": { "$value": "4", "$type": "dimension", "unit": "px" },
+    "buttons-sm-gap": { "$value": "4", "$type": "dimension", "unit": "px" },
+    "buttons-lg-height": { "$value": "40", "$type": "dimension", "unit": "px" },
+    "buttons-md-height": { "$value": "32", "$type": "dimension", "unit": "px" },
+    "buttons-sm-height": { "$value": "24", "$type": "dimension", "unit": "px" },
+    "buttons-lg-icon-size": { "$value": "24", "$type": "dimension", "unit": "px" },
+    "buttons-md-icon-size": { "$value": "20", "$type": "dimension", "unit": "px" },
+    "buttons-sm-icon-size": { "$value": "16", "$type": "dimension", "unit": "px" }
+  }
+}
+

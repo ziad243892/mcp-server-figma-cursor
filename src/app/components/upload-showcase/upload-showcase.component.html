@@ -1,0 +1,61 @@
+<div class="upload-showcase">
+  <header class="upload-showcase__header">
+    <h1>Upload Component Showcase</h1>
+    <p>Testing upload component variants from Figma design system</p>
+    
+    <div class="upload-showcase__controls">
+      <label>
+        <input type="checkbox" [checked]="rtl" (change)="toggleRtl()">
+        RTL Mode (Arabic)
+      </label>
+      
+      <label>
+        <input type="checkbox" [checked]="disabled" (change)="toggleDisabled()">
+        Disabled State
+      </label>
+      
+      <label>
+        <input type="checkbox" [checked]="showHelperText" (change)="toggleHelperText()">
+        Show Helper Text
+      </label>
+    </div>
+  </header>
+
+  <div class="upload-showcase__content">
+    <!-- Default State -->
+    <section class="upload-showcase__section">
+      <h2>Default State</h2>
+      <alk-upload
+        [rtl]="rtl"
+        [disabled]="false"
+        [showHelperText]="showHelperText"
+        (filesSelected)="onFilesSelected($event)"
+        (filesDropped)="onFilesDropped($event)"
+        (error)="onError($event)">
+      </alk-upload>
+    </section>
+
+    <!-- Disabled State -->
+    <section class="upload-showcase__section">
+      <h2>Disabled State</h2>
+      <alk-upload
+        [rtl]="rtl"
+        [disabled]="true"
+        [showHelperText]="showHelperText">
+      </alk-upload>
+    </section>
+
+    <!-- With Selected Files Info -->
+    <section class="upload-showcase__section" *ngIf="selectedFiles.length > 0">
+      <h2>Selected Files</h2>
+      <div class="upload-showcase__files">
+        <div class="upload-showcase__file" *ngFor="let file of selectedFiles">
+          <span class="upload-showcase__file-name">{{ file.name }}</span>
+          <span class="upload-showcase__file-size">({{ formatFileSize(file.size) }})</span>
+        </div>
+      </div>
+      <button class="upload-showcase__clear-button" (click)="clearFiles()">Clear Files</button>
+    </section>
+  </div>
+</div>
+

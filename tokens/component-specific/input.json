@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$description": "Component-specific tokens for Input component",
+  "input": {
+    "background": {
+      "default": { "$value": "{alias.colors.background.default}", "$type": "color" },
+      "disabled": { "$value": "{alias.colors.background.secondary}", "$type": "color" }
+    },
+    "border": {
+      "default": { "$value": "{alias.colors.border.default}", "$type": "color" },
+      "hover": { "$value": "{alias.colors.border.hover}", "$type": "color" },
+      "focus": { "$value": "{alias.colors.border.focus}", "$type": "color" },
+      "error": { "$value": "{alias.colors.error}", "$type": "color" },
+      "width": { "$value": "1", "$type": "dimension", "unit": "px" },
+      "radius": { "$value": "{alias.borderRadius.base}", "$type": "dimension" }
+    },
+    "padding": {
+      "x": { "$value": "{alias.spacing.md}", "$type": "dimension" },
+      "y": { "$value": "{alias.spacing.md}", "$type": "dimension" }
+    },
+    "text": {
+      "color": { "$value": "{alias.colors.text.primary}", "$type": "color" },
+      "placeholder": { "$value": "{alias.colors.text.tertiary}", "$type": "color" },
+      "fontSize": { "$value": "{primitive.fontSize.base}", "$type": "dimension" }
+    },
+    "height": {
+      "sm": { "$value": "32", "$type": "dimension", "unit": "px" },
+      "md": { "$value": "40", "$type": "dimension", "unit": "px" },
+      "lg": { "$value": "48", "$type": "dimension", "unit": "px" }
+    }
+  }
+}
+

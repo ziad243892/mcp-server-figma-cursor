@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$description": "Universal collection - aggregates commonly used tokens from all collections for universal access (ALL_SCOPES equivalent)",
+  "universal": {
+    "colors": {
+      "primary": {
+        "$value": "{alias.colors.primary}",
+        "$type": "color",
+        "description": "Universal primary color - accessible everywhere"
+      },
+      "secondary": {
+        "$value": "{alias.colors.secondary}",
+        "$type": "color",
+        "description": "Universal secondary color"
+      },
+      "success": {
+        "$value": "{alias.colors.success}",
+        "$type": "color",
+        "description": "Universal success color"
+      },
+      "error": {
+        "$value": "{alias.colors.error}",
+        "$type": "color",
+        "description": "Universal error color"
+      },
+      "warning": {
+        "$value": "{alias.colors.warning}",
+        "$type": "color",
+        "description": "Universal warning color"
+      },
+      "text-primary": {
+        "$value": "{alias.colors.text.primary}",
+        "$type": "color",
+        "description": "Universal primary text color"
+      },
+      "text-secondary": {
+        "$value": "{alias.colors.text.secondary}",
+        "$type": "color",
+        "description": "Universal secondary text color"
+      },
+      "background": {
+        "$value": "{alias.colors.background.default}",
+        "$type": "color",
+        "description": "Universal background color"
+      },
+      "border": {
+        "$value": "{alias.colors.border.default}",
+        "$type": "color",
+        "description": "Universal border color"
+      }
+    },
+    "spacing": {
+      "base": {
+        "$value": "{alias.spacing.md}",
+        "$type": "dimension",
+        "description": "Universal base spacing"
+      },
+      "small": {
+        "$value": "{alias.spacing.sm}",
+        "$type": "dimension",
+        "description": "Universal small spacing"
+      },
+      "medium": {
+        "$value": "{alias.spacing.md}",
+        "$type": "dimension",
+        "description": "Universal medium spacing"
+      },
+      "large": {
+        "$value": "{alias.spacing.lg}",
+        "$type": "dimension",
+        "description": "Universal large spacing"
+      }
+    },
+    "borderRadius": {
+      "base": {
+        "$value": "{alias.borderRadius.base}",
+        "$type": "dimension",
+        "description": "Universal base border radius"
+      },
+      "large": {
+        "$value": "{alias.borderRadius.lg}",
+        "$type": "dimension",
+        "description": "Universal large border radius"
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "$value": "{primitive.fontFamily.sans}",
+        "$type": "fontFamily",
+        "description": "Universal font family"
+      },
+      "fontSize": {
+        "base": {
+          "$value": "{primitive.fontSize.base}",
+          "$type": "dimension",
+          "description": "Universal base font size"
+        }
+      },
+      "lineHeight": {
+        "base": {
+          "$value": "{primitive.lineHeight.normal}",
+          "$type": "number",
+          "description": "Universal base line height"
+        }
+      }
+    },
+    "components": {
+      "button": {
+        "primary": {
+          "background": {
+            "$value": "{component.button.primary.background.default}",
+            "$type": "color",
+            "description": "Universal primary button background"
+          },
+          "text": {
+            "$value": "{component.button.primary.text}",
+            "$type": "color",
+            "description": "Universal primary button text"
+          }
+        }
+      },
+      "card": {
+        "background": {
+          "$value": "{component.card.background}",
+          "$type": "color",
+          "description": "Universal card background"
+        },
+        "borderRadius": {
+          "$value": "{component.card.border.radius}",
+          "$type": "dimension",
+          "description": "Universal card border radius"
+        }
+      }
+    }
+  }
+}
+

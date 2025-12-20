@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$description": "Primitive border radius tokens - raw border radius values",
+  "borderRadius": {
+    "none": { "value": "0", "type": "dimension", "unit": "px" },
+    "sm": { "value": "4", "type": "dimension", "unit": "px" },
+    "base": { "value": "8", "type": "dimension", "unit": "px" },
+    "md": { "value": "12", "type": "dimension", "unit": "px" },
+    "lg": { "value": "16", "type": "dimension", "unit": "px" },
+    "xl": { "value": "24", "type": "dimension", "unit": "px" },
+    "2xl": { "value": "32", "type": "dimension", "unit": "px" },
+    "full": { "value": "9999", "type": "dimension", "unit": "px" }
+  }
+}
+

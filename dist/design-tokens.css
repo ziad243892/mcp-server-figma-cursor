@@ -1,0 +1,76 @@
+/* Design Tokens - Alkhwarizmi Design System */
+/* Generated from Figma variable structure */
+/* DO NOT EDIT - This file is auto-generated */
+
+/* primitive Collection */
+:root {
+}
+
+/* alias Collection */
+:root {
+}
+
+/* component-specific Collection */
+:root {
+  /* Upload Component Tokens */
+  --token-component-upload-container-padding: 24px;
+  --token-component-upload-container-gap: 24px;
+  --token-component-upload-container-borderRadius: 4px;
+  --token-component-upload-container-borderWidth: 1px;
+  --token-component-upload-container-borderStyle: dashed;
+  --token-component-upload-container-background-default: #f3f4f6;
+  --token-component-upload-container-background-disabled: #f3f4f6;
+  --token-component-upload-container-border-default: #d2d6db;
+  --token-component-upload-container-border-disabled: #9da4ae;
+  --token-component-upload-icon-size: 24px;
+  --token-component-upload-icon-color-default: #161616;
+  --token-component-upload-icon-color-disabled: #9da4ae;
+  --token-component-upload-text-main-fontSize: 16px;
+  --token-component-upload-text-main-fontWeight: 700;
+  --token-component-upload-text-main-lineHeight: 24px;
+  --token-component-upload-text-main-color-default: #1f2a37;
+  --token-component-upload-text-main-color-disabled: #9da4ae;
+  --token-component-upload-text-helper-fontSize: 14px;
+  --token-component-upload-text-helper-fontWeight: 400;
+  --token-component-upload-text-helper-lineHeight: 20px;
+  --token-component-upload-text-helper-color-default: #384250;
+  --token-component-upload-text-helper-color-disabled: #9da4ae;
+  --token-component-upload-text-helper-gap: 8px;
+  --token-component-upload-button-height: 32px;
+  --token-component-upload-button-paddingX: 12px;
+  --token-component-upload-button-paddingY: 0px;
+  --token-component-upload-button-gap: 4px;
+  --token-component-upload-button-borderRadius: 4px;
+  --token-component-upload-button-fontSize: 14px;
+  --token-component-upload-button-lineHeight: 20px;
+  --token-component-upload-button-background-default: rgba(255,255,255,0);
+  --token-component-upload-button-background-disabled: #e5e7eb;
+  --token-component-upload-button-text-default: #0a152f;
+  --token-component-upload-button-text-disabled: #9da4ae;
+}
+
+/* universal Collection */
+:root {
+  --token-universal-universal-colors-primary: {alias.colors.primary};
+  --token-universal-universal-colors-secondary: {alias.colors.secondary};
+  --token-universal-universal-colors-success: {alias.colors.success};
+  --token-universal-universal-colors-error: {alias.colors.error};
+  --token-universal-universal-colors-warning: {alias.colors.warning};
+  --token-universal-universal-colors-text-primary: {alias.colors.text.primary};
+  --token-universal-universal-colors-text-secondary: {alias.colors.text.secondary};
+  --token-universal-universal-colors-background: {alias.colors.background.default};
+  --token-universal-universal-colors-border: {alias.colors.border.default};
+  --token-universal-universal-spacing-base: {alias.spacing.md};
+  --token-universal-universal-spacing-small: {alias.spacing.sm};
+  --token-universal-universal-spacing-medium: {alias.spacing.md};
+  --token-universal-universal-spacing-large: {alias.spacing.lg};
+  --token-universal-universal-borderradius-base: {alias.borderRadius.base};
+  --token-universal-universal-borderradius-large: {alias.borderRadius.lg};
+  --token-universal-universal-typography-fontfamily: {primitive.fontFamily.sans};
+  --token-universal-universal-typography-fontsize-base: {primitive.fontSize.base};
+  --token-universal-universal-typography-lineheight-base: {primitive.lineHeight.normal};
+  --token-universal-universal-components-button-primary-background: {component.button.primary.background.default};
+  --token-universal-universal-components-button-primary-text: {component.button.primary.text};
+  --token-universal-universal-components-card-background: {component.card.background};
+  --token-universal-universal-components-card-borderradius: {component.card.border.radius};
+}

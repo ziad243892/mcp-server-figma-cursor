@@ -1,0 +1,145 @@
+// Upload/DropZone component styles matching Figma design
+.alk-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--token-component-upload-container-gap, 24px);
+  padding: var(--token-component-upload-container-padding, 24px);
+  width: 100%;
+  max-width: 362px;
+  background-color: var(--token-component-upload-container-background-default, #f3f4f6);
+  border: var(--token-component-upload-container-borderWidth, 1px) var(--token-component-upload-container-borderStyle, dashed) var(--token-component-upload-container-border-default, #d2d6db);
+  border-radius: var(--token-component-upload-container-borderRadius, 4px);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  
+  // Hover state
+  &:hover:not(.alk-upload--disabled) {
+    border-color: var(--token-alias-colors-primary, #12A89E);
+    background-color: var(--token-alias-colors-background-default, #ffffff);
+  }
+  
+  // Dragging state
+  &--dragging {
+    border-color: var(--token-alias-colors-primary, #12A89E);
+    background-color: var(--token-alias-colors-background-default, #ffffff);
+    border-style: solid;
+  }
+  
+  // Disabled state
+  &--disabled {
+    cursor: not-allowed;
+    background-color: var(--token-component-upload-container-background-disabled, #f3f4f6);
+    border-color: var(--token-component-upload-container-border-disabled, #9da4ae);
+    opacity: 0.6;
+  }
+  
+  // RTL support
+  &--rtl {
+    text-align: right;
+  }
+  
+  // Upload Icon
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--token-component-upload-icon-size, 24px);
+    height: var(--token-component-upload-icon-size, 24px);
+    flex-shrink: 0;
+    color: var(--token-component-upload-icon-color-default, #161616);
+    
+    svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  
+  // Text Wrapper
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--token-component-upload-text-helper-gap, 8px);
+    width: 100%;
+    text-align: center;
+  }
+  
+  // Main instruction text
+  &__main-text {
+    font-family: var(--token-primitive-font-family-sans);
+    font-size: var(--token-component-upload-text-main-fontSize, 16px);
+    font-weight: var(--token-component-upload-text-main-fontWeight, 700);
+    line-height: var(--token-component-upload-text-main-lineHeight, 24px);
+    color: var(--token-component-upload-text-main-color-default, #1f2a37);
+    margin: 0;
+    white-space: pre-wrap;
+    width: 100%;
+  }
+  
+  // Helper text
+  &__helper-text {
+    font-family: var(--token-primitive-font-family-sans);
+    font-size: var(--token-component-upload-text-helper-fontSize, 14px);
+    font-weight: var(--token-component-upload-text-helper-fontWeight, 400);
+    line-height: var(--token-component-upload-text-helper-lineHeight, 20px);
+    color: var(--token-component-upload-text-helper-color-default, #384250);
+    margin: 0;
+    white-space: pre-wrap;
+    width: 100%;
+  }
+  
+  // Browse Files Button
+  &__browse-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--token-component-upload-button-gap, 4px);
+    min-height: var(--token-component-upload-button-height, 32px);
+    max-height: var(--token-component-upload-button-height, 32px);
+    padding: var(--token-component-upload-button-paddingY, 0px) var(--token-component-upload-button-paddingX, 12px);
+    background-color: var(--token-component-upload-button-background-default, rgba(255,255,255,0));
+    border: none;
+    border-radius: var(--token-component-upload-button-borderRadius, 4px);
+    font-family: var(--token-primitive-font-family-sans);
+    font-size: var(--token-component-upload-button-fontSize, 14px);
+    line-height: var(--token-component-upload-button-lineHeight, 20px);
+    font-weight: var(--token-primitive-font-weight-normal, 400);
+    color: var(--token-component-upload-button-text-default, #0a152f);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+    &:hover:not(:disabled) {
+      background-color: var(--token-alias-colors-background-secondary, #f3f4f6);
+    }
+    
+    &:focus-visible {
+      outline: 2px solid var(--token-alias-colors-primary, #12A89E);
+      outline-offset: 2px;
+    }
+    
+    &:disabled {
+      cursor: not-allowed;
+      background-color: var(--token-component-upload-button-background-disabled, #e5e7eb);
+      color: var(--token-component-upload-button-text-disabled, #9da4ae);
+    }
+  }
+  
+  // Disabled state overrides
+  &--disabled {
+    .alk-upload__icon {
+      color: var(--token-component-upload-icon-color-disabled, #9da4ae);
+    }
+    
+    .alk-upload__main-text {
+      color: var(--token-component-upload-text-main-color-disabled, #9da4ae);
+    }
+    
+    .alk-upload__helper-text {
+      color: var(--token-component-upload-text-helper-color-disabled, #9da4ae);
+    }
+  }
+}
+

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$description": "Alias spacing tokens - semantic spacing references that point to Primitive spacing",
+  "spacing": {
+    "none": {
+      "$value": "{primitive.spacing.0}",
+      "$type": "dimension",
+      "description": "No spacing"
+    },
+    "xs": {
+      "$value": "{primitive.spacing.1}",
+      "$type": "dimension",
+      "description": "Extra small spacing"
+    },
+    "sm": {
+      "$value": "{primitive.spacing.2}",
+      "$type": "dimension",
+      "description": "Small spacing"
+    },
+    "md": {
+      "$value": "{primitive.spacing.4}",
+      "$type": "dimension",
+      "description": "Medium spacing"
+    },
+    "lg": {
+      "$value": "{primitive.spacing.6}",
+      "$type": "dimension",
+      "description": "Large spacing"
+    },
+    "xl": {
+      "$value": "{primitive.spacing.8}",
+      "$type": "dimension",
+      "description": "Extra large spacing"
+    },
+    "2xl": {
+      "$value": "{primitive.spacing.12}",
+      "$type": "dimension",
+      "description": "2x extra large spacing"
+    },
+    "3xl": {
+      "$value": "{primitive.spacing.16}",
+      "$type": "dimension",
+      "description": "3x extra large spacing"
+    }
+  }
+}
+

@@ -1,0 +1,35 @@
+<button
+  [class]="getButtonClasses()"
+  [disabled]="disabled"
+  [type]="type"
+  [attr.dir]="rtl ? 'rtl' : 'ltr'">
+  
+  <!-- Left Icon (LTR) or Right Icon (RTL) -->
+  <span *ngIf="(showLeftIcon && !rtl) || (showRightIcon && rtl)" class="alk-button__icon alk-button__icon--left">
+    <ng-container *ngTemplateOutlet="leftIcon || defaultLeftIcon"></ng-container>
+  </span>
+  
+  <!-- Text Content -->
+  <span *ngIf="showText" class="alk-button__text">
+    {{ getDisplayText() }}
+  </span>
+  
+  <!-- Right Icon (LTR) or Left Icon (RTL) -->
+  <span *ngIf="(showRightIcon && !rtl) || (showLeftIcon && rtl)" class="alk-button__icon alk-button__icon--right">
+    <ng-container *ngTemplateOutlet="rightIcon || defaultRightIcon"></ng-container>
+  </span>
+</button>
+
+<!-- Default Left Icon Template -->
+<ng-template #defaultLeftIcon>
+  <svg [attr.width]="getIconSize()" [attr.height]="getIconSize()" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 17L13 12L18 7M11 17L6 12L11 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</ng-template>
+
+<!-- Default Right Icon Template -->
+<ng-template #defaultRightIcon>
+  <svg [attr.width]="getIconSize()" [attr.height]="getIconSize()" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6 17L11 12L6 7M13 17L18 12L13 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</ng-template>

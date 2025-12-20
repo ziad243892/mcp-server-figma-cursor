@@ -1,0 +1,164 @@
+// Accordion component styles matching Figma design
+.alk-accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--token-alias-colors-background-default, #ffffff);
+  border: 1px solid var(--token-alias-colors-border-default, #d2d6db);
+  border-radius: var(--token-alias-border-radius-base, 8px);
+  
+  // Accordion Header
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: var(--token-component-accordion-header-accordion-lg-header-gap, 16px);
+    width: 100%;
+    padding: var(--token-component-accordion-header-accordion-lg-header-v-padding, 16px);
+    padding-left: var(--token-component-accordion-header-accordion-lg-header-v-padding, 16px);
+    padding-right: var(--token-component-accordion-header-accordion-lg-header-v-padding, 16px);
+    background-color: var(--token-alias-colors-background-default, #ffffff);
+    border: none;
+    border-bottom: 1px solid var(--token-alias-colors-border-default, #d2d6db);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+    
+    // Remove default button styles
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    
+    &:hover {
+      background-color: var(--token-alias-colors-background-secondary, #f9fafb);
+    }
+    
+    &:focus-visible {
+      outline: 2px solid var(--token-alias-colors-border-focus);
+      outline-offset: -2px;
+    }
+    
+    // Size: Large
+    &--large {
+      padding: var(--token-component-accordion-header-accordion-lg-header-padding, 16px);
+      gap: var(--token-component-accordion-header-accordion-lg-header-gap, 16px);
+      
+      .alk-accordion__title {
+        font-size: var(--token-primitive-font-size-base, 16px);
+        line-height: var(--token-primitive-line-height-normal, 24px);
+        font-weight: var(--token-primitive-font-weight-bold, 700);
+      }
+    }
+    
+    // Size: Medium
+    &--medium {
+      padding: var(--token-component-accordion-header-accordion-md-header-padding, 12px);
+      gap: var(--token-component-accordion-header-accordion-md-header-gap, 16px);
+      
+      .alk-accordion__title {
+        font-size: var(--token-primitive-font-size-base, 16px);
+        line-height: var(--token-primitive-line-height-normal, 24px);
+        font-weight: var(--token-primitive-font-weight-bold, 700);
+      }
+    }
+    
+    // Size: Small
+    &--small {
+      padding: var(--token-component-accordion-header-accordion-sm-header-padding, 8px);
+      gap: var(--token-component-accordion-header-accordion-sm-header-gap, 16px);
+      
+      .alk-accordion__title {
+        font-size: var(--token-primitive-font-size-base, 16px);
+        line-height: var(--token-primitive-line-height-normal, 24px);
+        font-weight: var(--token-primitive-font-weight-bold, 700);
+      }
+    }
+    
+    // Icon alignment: Leading (left in LTR)
+    &--icon-leading {
+      flex-direction: row;
+      
+      .alk-accordion__icon {
+        order: -1;
+      }
+    }
+    
+    // Icon alignment: Trailing (right in LTR)
+    &--icon-trailing {
+      flex-direction: row;
+      
+      .alk-accordion__icon {
+        order: 1;
+      }
+    }
+    
+    // RTL support
+    &--rtl {
+      text-align: right;
+      
+      &.alk-accordion__header--icon-leading {
+        .alk-accordion__icon {
+          order: 1; // Icon on right in RTL
+        }
+      }
+      
+      &.alk-accordion__header--icon-trailing {
+        .alk-accordion__icon {
+          order: -1; // Icon on left in RTL
+        }
+      }
+    }
+  }
+  
+  // Accordion Title
+  &__title {
+    flex: 1 0 0;
+    color: var(--token-alias-colors-text-primary, #161616);
+    font-family: var(--token-primitive-font-family-sans);
+    white-space: pre-wrap;
+  }
+  
+  // Accordion Icon
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--token-component-accordion-icon-size, 24px);
+    height: var(--token-component-accordion-icon-size, 24px);
+    flex-shrink: 0;
+    color: var(--token-alias-colors-text-primary, #161616);
+    transition: transform 0.2s ease;
+    
+    svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    
+    // Rotate icon when expanded
+    &--expanded {
+      transform: rotate(180deg);
+    }
+  }
+  
+  // Accordion Body
+  &__body {
+    padding-top: var(--token-component-accordion-body-accordion-body-padding-top, 8px);
+    padding-bottom: var(--token-component-accordion-body-accordion-body-padding-bottom, 24px);
+    padding-left: var(--token-component-accordion-body-accordion-body-padding-left, 48px);
+    padding-right: var(--token-component-accordion-body-accordion-body-padding-right, 16px);
+    color: var(--token-alias-colors-text-secondary, #384250);
+    font-family: var(--token-primitive-font-family-sans);
+    font-size: var(--token-primitive-font-size-base, 16px);
+    line-height: var(--token-primitive-line-height-normal, 24px);
+    font-weight: var(--token-primitive-font-weight-normal, 400);
+    white-space: pre-wrap;
+    
+    // RTL support
+    &--rtl {
+      padding-left: var(--token-component-accordion-body-accordion-body-padding-right, 16px);
+      padding-right: var(--token-component-accordion-body-accordion-body-padding-left, 48px);
+      text-align: right;
+    }
+  }
+}
+

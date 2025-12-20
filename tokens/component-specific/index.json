@@ -1,0 +1,8 @@
+{
+  "button": { "$ref": "./button.json" },
+  "card": { "$ref": "./card.json" },
+  "input": { "$ref": "./input.json" },
+  "accordion": { "$ref": "./accordion.json" },
+  "upload": { "$ref": "./upload.json" }
+}
+
